@@ -14,7 +14,13 @@ public class BaseTen{
         }
 
         for (int count = 0; count < value.length(); count++){
-            baseTen += (number %  10) * Math.pow(2,count);
+
+            int powerOfTwo = 1;
+            for (int index = 0; index < count; index++){
+                powerOfTwo *= 2;
+            }
+
+            baseTen += (number %  10) * powerOfTwo;
             number /= 10; 
         }
         return baseTen;

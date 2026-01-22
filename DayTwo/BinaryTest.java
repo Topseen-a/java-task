@@ -5,13 +5,13 @@ public class BinaryTest{
 
     @Test
     public void testThatGetBinaryMethodExist(){
-        Assertions.assertNotNull(Binary.getBinary(5));
+        Assertions.assertNotNull(Binary.getBinary(-5));
     }
 
     @Test
     public void testThatPositiveNumbersReturnPositveValue(){
-        String actual = Binary.getBinary(10);
-        String expected = "1010";
+        String actual = Binary.getBinary(5);
+        String expected = "101";
         Assertions.assertEquals(actual,expected);
     }
 
