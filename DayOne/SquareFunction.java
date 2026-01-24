@@ -1,7 +1,7 @@
 public class SquareFunction{
     public static void main(String[] args){
 
-        System.out.println(isSquare(4,3));
+        System.out.println(calculateSquare(4,3));
     }
 
     public static int calculateSquare(int firstNumber, int secondNumber){

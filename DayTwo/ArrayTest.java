@@ -26,4 +26,22 @@ public class ArrayTest{
         int expected = 9;
         Assertions.assertEquals(actual,expected);
     }
+
+    @Test
+    public void testThatNegativeNumbersReturnCorrectValue(){
+        int[][] array = {{-2,-3,4},{5,6,-5}};  
+    
+        int actual = Array.getMaximum(array);
+        int expected = 6;
+        Assertions.assertEquals(actual,expected);
+    }
+
+    @Test
+    public void testThatJaggedArrayReturnsCorrectValue(){
+        int[][] array = {{2,3,4},{5,6}};
+
+        int actual = Array.getMaximum(array);
+        int expected = 11;
+        Assertions.assertEquals(actual,expected);
+    }
 }
